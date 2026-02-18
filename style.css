@@ -343,3 +343,8 @@ input {
 .form-btn {
   border: none;
 }
+/* ----------------- FOOTER SECTION -----------------*/
+.footer {
+  background-color: #fefae0;
+  color: #45484c;
+}
