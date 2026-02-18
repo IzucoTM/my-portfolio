@@ -76,7 +76,7 @@ ul {
 }
 img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 /* ----------------- COMPONENTS -----------------*/
 .page-container {
@@ -174,10 +174,13 @@ img {
   justify-content: center;
   margin-bottom: 1.5rem;
 }
+.hero-img {
+  border-bottom-right-radius: 200px;
+}
 
 /* ----------------- ABOUT SECTION -----------------*/
 .title-container {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .about-content-container {
   margin-bottom: 2rem;
@@ -190,10 +193,12 @@ img {
   text-align: left;
 }
 
-/* ----------------- SKILL SECTION -----------------*/
+/* ----------------- MY SERVICES SECTION -----------------*/
 .skill-grid-container {
   display: grid;
   grid-template-columns: 1fr;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .skill-card {
   background-color: #283618;
@@ -218,4 +223,27 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
+.rating {
+  color: #0bcf0b;
+  text-shadow: 1px 1px 10px #60f860;
+}
+.rate {
+  background-color: #fff;
+  border-radius: 50px;
+}
+.rate-child {
+  border-radius: 50px;
+  height: 10px;
+  background-color: #714116;
+  width: 90%;
+}
+.css {
+  width: 85%;
+}
+.frame-work {
+  width: 80%;
+}
+
+/* ----------------- MY SERVICES SECTION -----------------*/
