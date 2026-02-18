@@ -345,6 +345,42 @@ input {
 }
 /* ----------------- FOOTER SECTION -----------------*/
 .footer {
-  background-color: #fefae0;
-  color: #45484c;
+  background-color: #283618;
+  padding: 1rem;
+  border-top: 1px solid #ffffff5e;
+}
+.footer-logo {
+  font-family: "Roboto Serif", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-style: italic;
+  background: linear-gradient(45deg, #45484c, #adb5bd, #ced3d7);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  text-align: left;
+  padding: 2rem;
+  border-bottom: 1px solid #18200e;
+}
+.footer-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.footer-icon,
+#footer-icon {
+  font-size: 1.5rem;
+  color: #fefae0;
+}
+.footer-link {
+  color: #ced3d7;
 }
