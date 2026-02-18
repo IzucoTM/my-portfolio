@@ -130,6 +130,9 @@ img {
   font-size: 1.5rem;
   letter-spacing: 1px;
   font-style: italic;
+  background: linear-gradient(45deg, #45484c, #adb5bd, #ced3d7);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .nav-items {
   display: none;
@@ -193,7 +196,7 @@ img {
   text-align: left;
 }
 
-/* ----------------- MY SERVICES SECTION -----------------*/
+/* ----------------- SKILL SECTION -----------------*/
 .skill-grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -271,4 +274,8 @@ img {
 }
 .service-card-icon {
   font-size: 5rem;
+}
+/* ----------------- PROJECT SECTION -----------------*/
+.project-title-container {
+  margin-bottom: 2rem;
 }
