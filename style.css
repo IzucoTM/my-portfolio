@@ -279,3 +279,25 @@ img {
 .project-title-container {
   margin-bottom: 2rem;
 }
+.project-card {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  background-color: #283618;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+.project-img {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.project-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
