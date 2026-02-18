@@ -189,3 +189,32 @@ img {
   overflow: hidden;
   text-align: left;
 }
+
+/* ----------------- SKILL SECTION -----------------*/
+.skill-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.skill-card {
+  background-color: #283618;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.card-title-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.skill-logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px #7e8674;
+}
+.card-para-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
