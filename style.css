@@ -77,7 +77,6 @@ ul {
 img {
   width: 100%;
   border-radius: 20px;
-  max-width: 500px;
 }
 /* ----------------- COMPONENTS -----------------*/
 .main-container {
@@ -94,21 +93,27 @@ img {
   border-radius: 5px;
   font-weight: 800;
   font-size: 0.8rem;
+  cursor: pointer;
 }
 .btn-primary {
   background-color: #fefae0;
   border: 1px solid #fefae0;
   color: #45484c;
+  transition: 0.5s;
 }
 .btn-secondary {
   background-color: transparent;
   border: 1px solid #fefae0;
   color: #fff;
+  transition: 0.5s;
 }
 .secondary-component {
   background: linear-gradient(45deg, #714116, #bc6c25, #d7a77c);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.title-container {
+  margin-bottom: 2rem;
 }
 
 /* ----------------- NAV BAR -----------------*/
@@ -138,6 +143,9 @@ img {
   background: linear-gradient(45deg, #45484c, #adb5bd, #ced3d7);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.nav-link {
+  color: #d7a77c;
 }
 .nav-items {
   display: none;
@@ -187,9 +195,7 @@ img {
 }
 
 /* ----------------- ABOUT SECTION -----------------*/
-.title-container {
-  margin-bottom: 2rem;
-}
+
 .about-content-container {
   margin-bottom: 2rem;
   display: flex;
@@ -204,12 +210,14 @@ img {
   overflow: hidden;
   text-align: left;
 }
+.about-img {
+  max-width: 500px;
+}
 
 /* ----------------- SKILL SECTION -----------------*/
 .skill-grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 400px;
   margin: 0 auto;
 }
 .skill-card {
@@ -257,6 +265,9 @@ img {
 .frame-work {
   width: 80%;
 }
+.java {
+  width: 50%;
+}
 
 /* ----------------- MY SERVICES SECTION -----------------*/
 .service-card {
@@ -285,9 +296,7 @@ img {
   font-size: 5rem;
 }
 /* ----------------- PROJECT SECTION -----------------*/
-.project-title-container {
-  margin-bottom: 2rem;
-}
+
 .project-card-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -295,6 +304,7 @@ img {
   justify-items: center;
 }
 .project-card {
+  height: 600px;
   max-width: 500px;
   display: flex;
   flex-direction: column;
@@ -303,10 +313,12 @@ img {
   background-color: #283618;
   border-radius: 20px;
   margin-bottom: 2rem;
+  transition: 1s;
 }
 .project-img {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  height: 50%;
 }
 .project-card-content {
   display: flex;
@@ -324,16 +336,16 @@ img {
 }
 
 /* ----------------- CONTACT SECTION -----------------*/
-.contact-title-container {
-  margin-bottom: 2rem;
-}
+
 form {
   background-color: #7e8674;
   padding: 2rem;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px;
+}
+#form {
   display: grid;
-  flex-direction: column;
-  gap: 1rem;
+  grid-template-columns: 1fr;
 }
 .form-group {
   display: flex;
@@ -450,13 +462,105 @@ input {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    justify-items: flex-start;
   }
   .about-img- {
     width: 100%;
   }
   .about-img-container {
-    /* min-width: 300px; */
     grid-row: 1/1;
     grid-column: 1/1;
+  }
+  /* SKILL SECTION */
+  .skill-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  #java {
+    grid-column: 1 / span 2;
+  }
+  /* SERVICE SECTION */
+  .service-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* PROJECT SECTION */
+  .project-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  /* CONTACT */
+  #form {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  form {
+    text-align: left;
+  }
+  /* FOOTER */
+  .footer-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem 2rem;
+  }
+  .footer-first {
+    text-align: left;
+  }
+  .footer-icon-container {
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1024px) {
+  section {
+    margin-bottom: 10rem;
+  }
+  .nav-items {
+    display: flex;
+    gap: 1rem;
+  }
+  .nav-link {
+    color: #fff;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .title-container {
+    margin-bottom: 5rem;
+  }
+  .service-grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /* HOVER STATES */
+  .btn-primary:hover {
+    background-color: #989686;
+    border: 1px solid #989686;
+    color: #fff;
+    transform: scale(1.1, 1.2);
+    box-shadow: 0px 2px 5px #ced3d7;
+  }
+  .btn-secondary:hover {
+    transform: scale(1.1, 1.2);
+    box-shadow: 0px 2px 5px #ced3d7;
+  }
+  .nav-link:hover {
+    color: #bc6c25;
+  }
+  .project-card:hover {
+    transform: scale(1.05, 1.05);
+  }
+  .footer-link:hover {
+    color: #989686;
+    transform: scale(1.05, 1.05);
+  }
+  .footer-icon:hover {
+    color: #989686;
+    transform: scale(1.05, 1.05);
+  }
+  #footer-icon:hover {
+    color: #989686;
+    transform: scale(1.05, 1.05);
   }
 }
