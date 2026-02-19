@@ -428,7 +428,8 @@ input {
   /* HERO SECTION */
 
   .hero-content-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
   .hero-content {
@@ -444,7 +445,8 @@ input {
   }
   /* ABOUT SECTION */
   .about-content-container {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
   .about-img {
