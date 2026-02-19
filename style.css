@@ -183,6 +183,7 @@ img {
 }
 .hero-img {
   border-bottom-right-radius: 200px;
+  max-width: 300px;
 }
 
 /* ----------------- ABOUT SECTION -----------------*/
@@ -407,11 +408,12 @@ input {
 }
 
 /* ----------------- MEDIA QUERY -----------------*/
-@media (min-width: 576px) {
+@media (min-width: 633px) {
   /* COMPONENTS */
   .title-container {
     margin-bottom: 3rem;
   }
+
   /* NAV BAR */
   .header {
     margin-bottom: 10rem;
@@ -449,7 +451,12 @@ input {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-  .about-img {
-    min-width: 300px;
+  .about-img- {
+    width: 100%;
+  }
+  .about-img-container {
+    /* min-width: 300px; */
+    grid-row: 1/1;
+    grid-column: 1/1;
   }
 }
