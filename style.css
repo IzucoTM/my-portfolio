@@ -77,11 +77,16 @@ ul {
 img {
   width: 100%;
   border-radius: 20px;
+  max-width: 500px;
 }
 /* ----------------- COMPONENTS -----------------*/
-.page-container {
+.main-container {
   max-width: 1600px;
   width: 95%;
+  margin: 0 auto;
+}
+.main {
+  max-width: 1300px;
   margin: 0 auto;
 }
 .btn {
@@ -143,12 +148,14 @@ img {
 /* ----------------- HERO SECTION -----------------*/
 .hero-section {
   text-align: center;
+  margin-bottom: 10rem;
 }
 .hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 .hero-component {
   color: #fff;
@@ -157,14 +164,11 @@ img {
   text-align: center;
   padding: 0.5rem 0.5rem;
   border-radius: 50px;
-  margin: 0rem 1rem 2rem 1rem;
   box-shadow: 0px 1px 10px #7e8674;
   max-width: 300px;
-  align-self: left;
+  margin-bottom: 1rem;
 }
-.hero-title {
-  margin-bottom: 0.5rem;
-}
+
 .hero-para {
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -187,6 +191,10 @@ img {
 }
 .about-content-container {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
 }
 .about-para-container {
   padding: 1rem;
@@ -278,6 +286,12 @@ img {
 /* ----------------- PROJECT SECTION -----------------*/
 .project-title-container {
   margin-bottom: 2rem;
+}
+.project-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
 }
 .project-card {
   max-width: 500px;
@@ -393,3 +407,47 @@ input {
 }
 
 /* ----------------- MEDIA QUERY -----------------*/
+@media (min-width: 576px) {
+  /* COMPONENTS */
+  .title-container {
+    margin-bottom: 3rem;
+  }
+  /* NAV BAR */
+  .header {
+    margin-bottom: 10rem;
+  }
+  .nav-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .nav-btn {
+    display: flex;
+  }
+  /* HERO SECTION */
+
+  .hero-content-container {
+    display: flex;
+    gap: 2rem;
+  }
+  .hero-content {
+    align-items: start;
+    text-align: left;
+  }
+  .hero-component {
+    margin: 0;
+  }
+  .hero-para {
+    padding: 0;
+    max-width: 700px;
+  }
+  /* ABOUT SECTION */
+  .about-content-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .about-img {
+    min-width: 300px;
+  }
+}

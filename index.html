@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="page-container">
+    <div class="main-container">
       <header class="header" id="header">
         <div class="nav-logo">IZUCO</div>
         <ul class="nav-items">
@@ -45,10 +45,12 @@
           <li class="nav-item"><a href="#" class="nav-link">SKILL'S</a></li>
           <li class="nav-item"><a href="#" class="nav-link">PROJECTS</a></li>
         </ul>
-        <div class="nav-btn"><a href="#" class="nav-link">CONTACT</a></div>
-        <i class="fa-solid fa-bars nav-menu"></i>
+        <div class="nav-btn-container">
+          <a href="#" class="btn btn-primary nav-btn">CONTACT</a
+          ><i class="fa-solid fa-bars nav-menu"></i>
+        </div>
       </header>
-      <main class="main-container">
+      <main class="main">
         <!-- HERO SECTION -->
         <section class="hero-section" id="hero-section">
           <div class="hero-content-container">
@@ -90,25 +92,27 @@
           </div>
 
           <div class="about-content-container">
-            <div class="about-para-container">
-              <p class="about-para">
-                Hi, I'm <strong>Henry</strong>, <br />a Front-End Developer who
-                helps businesses turn visitors into customers through clean,
-                responsive, and high-converting websites. <br />
-                I build fast, mobile-friendly, and visually polished interfaces
-                that not only look good but are strategically designed to
-                improve user experience and increase engagement. Whether you
-                need a landing page that converts, a business website that
-                builds trust, or a modern UI that strengthens your brand — I
-                focus on delivering results, not just code. If you're looking
-                for someone reliable, detail-oriented, and committed to bringing
-                your vision to life, let's build something that grows your
-                business.
-              </p>
+            <div class="about-content">
+              <div class="about-para-container">
+                <p class="about-para">
+                  Hi, I'm <strong>Henry</strong>, <br />a Front-End Developer
+                  who helps businesses turn visitors into customers through
+                  clean, responsive, and high-converting websites. <br />
+                  I build fast, mobile-friendly, and visually polished
+                  interfaces that not only look good but are strategically
+                  designed to improve user experience and increase engagement.
+                  Whether you need a landing page that converts, a business
+                  website that builds trust, or a modern UI that strengthens
+                  your brand — I focus on delivering results, not just code. If
+                  you're looking for someone reliable, detail-oriented, and
+                  committed to bringing your vision to life, let's build
+                  something that grows your business.
+                </p>
+              </div>
+              <button class="btn btn-primary">LEARN MORE</button>
             </div>
-            <button class="btn btn-primary">LEARN MORE</button>
+            <div><img class="about-img" src="images/40752.webp" alt="#" /></div>
           </div>
-          <img src="images/40752.webp" alt="#" />
         </section>
         <!-- SKILL SECTION -->
         <section class="skill-section" id="skill's">
@@ -294,55 +298,57 @@
             <h2 class="project-title secondary-component">My Project's</h2>
             <p class="project-para">A showcase of my recent work</p>
           </div>
-          <div class="project-card">
-            <img src="images/project1.jpg" alt="" class="project-img" />
-            <div class="project-card-content">
-              <h4 class="project-card-title">TRADE-FI</h4>
-              <p class="project-card-para">
-                Designed and developed a modern NFT marketplace website focused
-                on seamless user experience and sleek UI.
-              </p>
-              <a
-                href="https://trade-fi.vercel.app/index.html"
-                class="btn btn-primary project-btn"
-                >VISIT
-                <ion-icon
-                  class="project-icon"
-                  name="chevron-forward-outline"
-                ></ion-icon
-              ></a>
+          <div class="project-card-container">
+            <div class="project-card">
+              <img src="images/project1.jpg" alt="" class="project-img" />
+              <div class="project-card-content">
+                <h4 class="project-card-title">TRADE-FI</h4>
+                <p class="project-card-para">
+                  Designed and developed a modern NFT marketplace website
+                  focused on seamless user experience and sleek UI.
+                </p>
+                <a
+                  href="https://trade-fi.vercel.app/index.html"
+                  class="btn btn-primary project-btn"
+                  >VISIT
+                  <ion-icon
+                    class="project-icon"
+                    name="chevron-forward-outline"
+                  ></ion-icon
+                ></a>
+              </div>
             </div>
-          </div>
-          <div class="project-card">
-            <img src="images/project2.jpg" alt="" class="project-img" />
-            <div class="project-card-content">
-              <h4 class="project-card-title">HOMEWIDE</h4>
-              <p class="project-card-para">
-                Designed and developed a modern real estate website that
-                showcases property listings with clean layouts, high-quality
-                visuals, and intuitive navigation.
-              </p>
-              <a
-                href="https://homewide-he6z.vercel.app/"
-                class="btn btn-primary project-btn"
-                >VISIT <ion-icon name="chevron-forward-outline"></ion-icon
-              ></a>
+            <div class="project-card">
+              <img src="images/project2.jpg" alt="" class="project-img" />
+              <div class="project-card-content">
+                <h4 class="project-card-title">HOMEWIDE</h4>
+                <p class="project-card-para">
+                  Designed and developed a modern real estate website that
+                  showcases property listings with clean layouts, high-quality
+                  visuals, and intuitive navigation.
+                </p>
+                <a
+                  href="https://homewide-he6z.vercel.app/"
+                  class="btn btn-primary project-btn"
+                  >VISIT <ion-icon name="chevron-forward-outline"></ion-icon
+                ></a>
+              </div>
             </div>
-          </div>
-          <div class="project-card">
-            <img src="images/project1.jpg" alt="" class="project-img" />
-            <div class="project-card-content">
-              <h4 class="project-card-title">MY PORTFOLIO</h4>
-              <p class="project-card-para">
-                Designed and developed a personal portfolio website to showcase
-                projects, skills, and professional experience in a clean and
-                engaging layout.
-              </p>
-              <a
-                href="https://my-portfolio-alpha-beryl-51.vercel.app/"
-                class="btn btn-primary project-btn"
-                >VISIT <ion-icon name="chevron-forward-outline"></ion-icon
-              ></a>
+            <div class="project-card">
+              <img src="images/project1.jpg" alt="" class="project-img" />
+              <div class="project-card-content">
+                <h4 class="project-card-title">MY PORTFOLIO</h4>
+                <p class="project-card-para">
+                  Designed and developed a personal portfolio website to
+                  showcase projects, skills, and professional experience in a
+                  clean and engaging layout.
+                </p>
+                <a
+                  href="https://my-portfolio-alpha-beryl-51.vercel.app/"
+                  class="btn btn-primary project-btn"
+                  >VISIT <ion-icon name="chevron-forward-outline"></ion-icon
+                ></a>
+              </div>
             </div>
           </div>
         </section>
