@@ -26,3 +26,15 @@ form.addEventListener("submit", function (e) {
 closeBtn.addEventListener("click", () => {
   modal.classList.remove("active");
 });
+
+const elements = document.querySelectorAll(".hidden");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+elements.forEach((el) => observer.observe(el));
