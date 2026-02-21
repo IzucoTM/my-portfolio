@@ -211,12 +211,16 @@ label {
   gap: 3rem;
   align-items: center;
 }
-.about-para-container {
+.text-container {
   padding: 1rem;
   margin-bottom: 1rem;
-  height: 170px;
+  max-height: 170px;
   overflow: hidden;
   text-align: left;
+  transition: max-height 0.5s;
+}
+.text-container.expanded {
+  max-height: 300px;
 }
 .about-img {
   max-width: 500px;
