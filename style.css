@@ -221,6 +221,7 @@ label {
 }
 .text-container.expanded {
   max-height: 300px;
+  overflow: auto;
 }
 .about-img {
   max-width: 500px;
