@@ -38,3 +38,20 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 elements.forEach((el) => observer.observe(el));
+
+// form
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const message = document.getElementById("message").value;
+
+  const phone = "2348012345678";
+
+  const text = `Hello, my name is ${name}. ${message}`;
+  const encodedText = encodeURIComponent(text);
+
+  const url = `https://wa.me/${phone}?text=${encodedText}`;
+
+  window.open(url, "_blank");
+});
