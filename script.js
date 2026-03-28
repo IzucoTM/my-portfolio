@@ -39,19 +39,25 @@ const observer = new IntersectionObserver((entries) => {
 
 elements.forEach((el) => observer.observe(el));
 
-// form
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+const navItem = document.getElementById("nav-items");
+const menu = document.getElementById("nav-menu");
+const cancel = document.getElementById("cancel");
+const home = document.getElementById("home");
+const about = document.getElementById("about");
+const services = document.getElementById("services");
+const skills = document.getElementById("skill");
+const project = document.getElementById("project");
+const hire = document.getElementById("hire-me");
 
-  const name = document.getElementById("name").value;
-  const message = document.getElementById("message").value;
+menu.addEventListener("click", function () {
+  navItem.style.transform = "translateY(0)";
+  cancel.style.display = "block";
+  menu.style.display = "none";
+  cancel.style.zIndex = "999";
+});
 
-  const phone = "2348012345678";
-
-  const text = `Hello, my name is ${name}. ${message}`;
-  const encodedText = encodeURIComponent(text);
-
-  const url = `https://wa.me/${phone}?text=${encodedText}`;
-
-  window.open(url, "_blank");
+cancel.addEventListener("click", function () {
+  navItem.style.transform = "translateY(100%)";
+  cancel.style.display = "none";
+  cancel.style.zIndex = "999";
 });
