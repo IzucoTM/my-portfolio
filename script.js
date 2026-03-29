@@ -46,20 +46,25 @@ menu.addEventListener("click", function () {
   cancel.style.zIndex = "999";
 });
 
+// form
+
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
 
   form.addEventListener("submit", function (e) {
-    e.preventDefault();
+    e.preventDefault(); // Prevent page refresh
 
+    // Collect form values
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const subject = document.getElementById("subject").value;
     const message = document.getElementById("message").value;
 
-    const phoneNumber = "2349123645519"; // CHANGE THIS
+    // Your WhatsApp number (no +, no spaces)
+    const phoneNumber = "2348012345678";
 
+    // Format WhatsApp message
     const whatsappMessage = `Hello, my name is ${name}
 Email: ${email}
 Phone: ${phone}
@@ -68,10 +73,18 @@ Subject: ${subject}
 Message:
 ${message}`;
 
+    // WhatsApp API link (iOS + Android friendly)
     const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(whatsappMessage)}`;
 
-    form.requestFullscreen();
+    // Reset form
+    form.reset();
 
-    window.open(url, "_blank");
+    // Open WhatsApp in new tab (iOS & Android safe)
+    const win = window.open(url, "_blank");
+
+    // Fallback if popup blocked
+    if (!win) {
+      window.location.href = url;
+    }
   });
 });
