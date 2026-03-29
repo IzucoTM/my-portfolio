@@ -43,20 +43,20 @@ const navItem = document.getElementById("nav-items");
 const menu = document.getElementById("nav-menu");
 const cancel = document.getElementById("cancel");
 const home = document.getElementById("home");
-const about = document.getElementById("about");
+const about = document.getElementById("aboutt");
 const services = document.getElementById("services");
-const skills = document.getElementById("skill");
-const project = document.getElementById("project");
+const skills = document.getElementById("skills");
+const project = document.getElementById("projects");
 const hire = document.getElementById("hire-me");
 
 cancel.addEventListener("click", function () {
-  navItem.style.transform = "translateY(100%)";
+  navItem.style.transform = "translateX(100%)";
   cancel.style.display = "none";
   cancel.style.zIndex = "999";
 });
 
 menu.addEventListener("click", function () {
-  navItem.style.transform = "translateY(0)";
+  navItem.style.transform = "translateX(0)";
   cancel.style.display = "block";
   // menu.style.display = "none";
   cancel.style.zIndex = "999";

@@ -157,7 +157,7 @@ label {
   font-weight: 600;
 }
 .nav-items {
-  /* display: none; */
+  display: none;
   position: fixed;
   inset: 0 0 0 20%;
   background-color: #7e8674;
@@ -167,12 +167,14 @@ label {
   justify-content: center;
   gap: 2rem;
   z-index: 5;
-  transform: translateY(100%);
+  transform: translateX(100%);
+  transition: all 0.3s ease;
 }
 .cancel {
+  font-size: 1.5rem;
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 30px;
+  right: 20px;
   z-index: 999;
   display: none;
 }
@@ -593,15 +595,12 @@ input {
 
   .nav-items {
     position: static;
-    /* display: flex; */
+
     flex-direction: row;
     gap: 1rem;
     background-color: transparent;
-    align-self: center;
   }
-  /* .nav-link {
-    color: #fff;
-  } */
+
   .nav-menu {
     display: none;
   }
