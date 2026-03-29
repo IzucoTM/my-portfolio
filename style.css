@@ -599,6 +599,7 @@ input {
     flex-direction: row;
     gap: 1rem;
     background-color: transparent;
+    transform: translateX(0%);
   }
 
   .nav-menu {

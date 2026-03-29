@@ -12,21 +12,6 @@ btn.addEventListener("click", () => {
   }
 });
 
-const form = document.querySelector("form");
-const modal = document.getElementById("successModal");
-const closeBtn = document.getElementById("closeModal");
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault(); // stop page refresh
-
-  modal.classList.add("active");
-  form.reset(); // clear form
-});
-
-closeBtn.addEventListener("click", () => {
-  modal.classList.remove("active");
-});
-
 const elements = document.querySelectorAll(".hidden");
 
 const observer = new IntersectionObserver((entries) => {
@@ -58,6 +43,35 @@ cancel.addEventListener("click", function () {
 menu.addEventListener("click", function () {
   navItem.style.transform = "translateX(0)";
   cancel.style.display = "block";
-  // menu.style.display = "none";
   cancel.style.zIndex = "999";
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    const phoneNumber = "2349123645519"; // CHANGE THIS
+
+    const whatsappMessage = `Hello, my name is ${name}
+Email: ${email}
+Phone: ${phone}
+Subject: ${subject}
+
+Message:
+${message}`;
+
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    form.requestFullscreen();
+
+    window.location.href = url;
+  });
 });

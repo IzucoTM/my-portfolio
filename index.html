@@ -124,7 +124,7 @@
                   designed to improve user experience and increase engagement.
                   Whether you need a landing page that converts, a business
                   website that builds trust, or a modern UI that strengthens
-                  your brand — I focus on delivering results, not just code. If
+                  your brand, I focus on delivering results, not just code. If
                   you're looking for someone reliable, detail-oriented, and
                   committed to bringing your vision to life, let's build
                   something that grows your business.
@@ -398,19 +398,16 @@
         <section class="contact hidden" id="contact">
           <div class="title-container hidden">
             <h2 class="contact-title secondary-component">CONTACT ME</h2>
-            <p class="project-para">A showcase of my recent work</p>
+            <p class="project-para">
+              Reach out for collaborations, projects or inquiries
+            </p>
           </div>
-          <form
-            class="hidden"
-            action="https://formspree.io/f/xojnneop"
-            method="post"
-          >
-            <div id="form">
+          <form class="hidden" id="contact-form">
+            <div id="form-content">
               <div class="form-group hidden">
                 <label for="name">Name</label>
                 <input
                   id="name"
-                  name="name"
                   type="text"
                   placeholder="Enter your name"
                   required
@@ -420,7 +417,6 @@
                 <label for="email">EMAIL</label>
                 <input
                   id="email"
-                  name="email"
                   type="email"
                   placeholder="example@gmail.com"
                   required
@@ -429,8 +425,7 @@
               <div class="form-group hidden">
                 <label for="name">Phone number</label>
                 <input
-                  id="phoneNumber"
-                  name="phone number"
+                  id="phone"
                   type="text"
                   placeholder="Enter your phone number"
                   required
@@ -440,9 +435,9 @@
                 <label for="name">Subject</label>
                 <input
                   id="subject"
-                  name="subject"
                   type="text"
                   placeholder="Input subject"
+                  required
                 />
               </div>
             </div>
@@ -450,11 +445,11 @@
             <div class="form-group hidden">
               <label for="Message">Message</label>
               <textarea
-                name="message"
                 id="message"
                 rows="10"
                 cols="70"
                 placeholder="message"
+                required
               ></textarea>
             </div>
             <button type="submit" class="btn btn-primary form-btn hidden">
