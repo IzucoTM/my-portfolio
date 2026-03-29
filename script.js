@@ -68,7 +68,7 @@ Subject: ${subject}
 Message:
 ${message}`;
 
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(whatsappMessage)}`;
 
     form.requestFullscreen();
 
