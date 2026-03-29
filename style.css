@@ -157,9 +157,9 @@ label {
   font-weight: 600;
 }
 .nav-items {
-  display: none;
+  /* display: none; */
   position: fixed;
-  inset: 0 0 0 70px;
+  inset: 0 0 0 20%;
   background-color: #7e8674;
   display: flex;
   flex-direction: column;
@@ -167,13 +167,14 @@ label {
   justify-content: center;
   gap: 2rem;
   z-index: 5;
+  transform: translateY(100%);
 }
 .cancel {
   position: fixed;
   top: 10px;
   right: 10px;
   z-index: 999;
-  /* display: none; */
+  display: none;
 }
 .nav-btn {
   display: none;
@@ -574,8 +575,9 @@ input {
   .footer-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
     margin: 2rem 2rem;
+    justify-items: center;
   }
   .footer-first {
     text-align: left;
@@ -588,14 +590,22 @@ input {
   section {
     margin-bottom: 10rem;
   }
+
   .nav-items {
-    display: flex;
+    position: static;
+    /* display: flex; */
+    flex-direction: row;
     gap: 1rem;
+    background-color: transparent;
+    align-self: center;
   }
-  .nav-link {
+  /* .nav-link {
     color: #fff;
-  }
+  } */
   .nav-menu {
+    display: none;
+  }
+  .cancel {
     display: none;
   }
   .title-container {

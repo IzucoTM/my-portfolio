@@ -49,15 +49,15 @@ const skills = document.getElementById("skill");
 const project = document.getElementById("project");
 const hire = document.getElementById("hire-me");
 
-menu.addEventListener("click", function () {
-  navItem.style.transform = "translateY(0)";
-  cancel.style.display = "block";
-  menu.style.display = "none";
-  cancel.style.zIndex = "999";
-});
-
 cancel.addEventListener("click", function () {
   navItem.style.transform = "translateY(100%)";
   cancel.style.display = "none";
+  cancel.style.zIndex = "999";
+});
+
+menu.addEventListener("click", function () {
+  navItem.style.transform = "translateY(0)";
+  cancel.style.display = "block";
+  // menu.style.display = "none";
   cancel.style.zIndex = "999";
 });
