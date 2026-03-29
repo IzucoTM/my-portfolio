@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const message = document.getElementById("message").value;
 
     // Your WhatsApp number (no +, no spaces)
-    const phoneNumber = "2348012345678";
+    const phoneNumber = "2349123645519";
 
     // Format WhatsApp message
     const whatsappMessage = `Hello, my name is ${name}
