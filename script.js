@@ -24,6 +24,8 @@ const observer = new IntersectionObserver((entries) => {
 
 elements.forEach((el) => observer.observe(el));
 
+// nav bar
+
 const navItem = document.getElementById("nav-items");
 const menu = document.getElementById("nav-menu");
 const cancel = document.getElementById("cancel");
@@ -44,6 +46,31 @@ menu.addEventListener("click", function () {
   navItem.style.transform = "translateX(0)";
   cancel.style.display = "block";
   cancel.style.zIndex = "999";
+});
+
+home.addEventListener("click", function () {
+  navItem.style.transform = "translateX(100%)";
+  cancel.style.display = "none";
+});
+
+about.addEventListener("click", function () {
+  navItem.style.transform = "translateX(100%)";
+  cancel.style.display = "none";
+});
+
+services.addEventListener("click", function () {
+  navItem.style.transform = "translateX(100%)";
+  cancel.style.display = "none";
+});
+
+skills.addEventListener("click", function () {
+  navItem.style.transform = "translateX(100%)";
+  cancel.style.display = "none";
+});
+
+project.addEventListener("click", function () {
+  navItem.style.transform = "translateX(100%)";
+  cancel.style.display = "none";
 });
 
 // form
