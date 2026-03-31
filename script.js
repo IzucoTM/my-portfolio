@@ -49,28 +49,38 @@ menu.addEventListener("click", function () {
 });
 
 home.addEventListener("click", function () {
-  navItem.style.transform = "translateX(100%)";
-  cancel.style.display = "none";
+  if (window.innerWidth <= 1024) {
+    navItem.style.transform = "translateX(100%)";
+    cancel.style.display = "none";
+  }
 });
 
 about.addEventListener("click", function () {
-  navItem.style.transform = "translateX(100%)";
-  cancel.style.display = "none";
+  if (window.innerWidth <= 1024) {
+    navItem.style.transform = "translateX(100%)";
+    cancel.style.display = "none";
+  }
 });
 
 services.addEventListener("click", function () {
-  navItem.style.transform = "translateX(100%)";
-  cancel.style.display = "none";
+  if (window.innerWidth <= 1024) {
+    navItem.style.transform = "translateX(100%)";
+    cancel.style.display = "none";
+  }
 });
 
 skills.addEventListener("click", function () {
-  navItem.style.transform = "translateX(100%)";
-  cancel.style.display = "none";
+  if (window.innerWidth <= 1024) {
+    navItem.style.transform = "translateX(100%)";
+    cancel.style.display = "none";
+  }
 });
 
 project.addEventListener("click", function () {
-  navItem.style.transform = "translateX(100%)";
-  cancel.style.display = "none";
+  if (window.innerWidth <= 1024) {
+    navItem.style.transform = "translateX(100%)";
+    cancel.style.display = "none";
+  }
 });
 
 // form
